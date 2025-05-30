@@ -34,7 +34,7 @@ import Button from "./elements/Button.vue";
         class="fixed top-0 right-0 bottom-0 left-auto flex flex-col items-end justify-start gap-5 px-8 pt-24 pb-10 text-center transition-all duration-300 ease-in-out xl:static xl:flex-row xl:items-center xl:bg-transparent xl:p-0"
         :class="[
           showNavbar
-            ? 'absolute overflow-auto bg-neutral-950 xl:flex'
+            ? 'absolute overflow-auto bg-neutral-500 xl:flex'
             : 'absolute translate-x-100 xl:flex xl:translate-x-0',
         ]"
       >
@@ -56,8 +56,6 @@ import Button from "./elements/Button.vue";
             class="w-full opacity-90 transition-opacity duration-300 ease-in-out hover:opacity-100"
           />
         </div>
-
-        <SocialMediaIcons class="mt-4" />
       </div>
     </div>
   </div>

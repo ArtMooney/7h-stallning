@@ -1,45 +1,37 @@
 <template>
   <div
-    class="relative grid items-start justify-items-center bg-neutral-400 px-12 pt-20 pb-12 md:grid-cols-[0.5fr_1fr_0.5fr] md:justify-items-start"
+    class="relative grid items-start gap-12 bg-neutral-400 px-12 pt-20 pb-12 md:grid-cols-[0.5fr_1fr_0.5fr] md:gap-8"
   >
     <NuxtLink to="/">
       <NuxtImg
         src="7h-logo.png"
         alt="footer logo"
-        class="relative mb-12 h-auto w-32 min-w-32 opacity-90 transition-opacity duration-300 ease-in-out hover:opacity-100 md:w-26 md:min-w-26"
+        class="relative h-auto w-20 min-w-20 justify-self-center opacity-50 transition-opacity duration-300 ease-in-out hover:opacity-100 md:justify-self-start"
       />
     </NuxtLink>
 
-    <SocialMediaIcons
-      class="row-start-3 my-12 md:col-start-3 md:col-end-4 md:row-start-auto md:mt-3 md:justify-self-end"
-    />
-
-    <div
-      class="flex flex-col flex-wrap items-center justify-center gap-x-4 gap-y-2 justify-self-center sm:mx-12 md:col-span-3 md:mx-0 lg:-mt-8 lg:flex-row"
-    ></div>
-
     <p
-      class="mt-12 flex flex-wrap justify-center text-xs leading-5 sm:mx-12 md:col-span-3 md:mt-20 md:justify-self-center"
+      class="flex h-full flex-wrap items-center justify-center text-xs leading-5"
     >
-      <span class="opacity-40">ADinQ AB</span>
+      <span class="opacity-40">7H Ställning AB</span>
       <span class="px-3 opacity-35">|</span>
-      <span class="opacity-40">Fabriksgatan 11, plan 3</span>
+      <span class="opacity-40">Bergkullavägen 5</span>
       <span class="px-3 opacity-35">|</span>
-      <span class="opacity-40">503 38 Borås</span>
+      <span class="opacity-40">511 62 Skene</span>
       <span class="px-3 opacity-35">|</span>
-      <a class="underline opacity-40 hover:opacity-50" href="tel:033-7222400"
-        >Tel. 033-72 22 400</a
+      <a class="underline opacity-40 hover:opacity-50" href="tel:0704-77 00 70"
+        >Tel. 0704-77 00 70</a
       >
       <span class="px-3 opacity-35">|</span>
-      <a
-        class="underline opacity-40 hover:opacity-50"
-        href="mailto:info@adinq.se"
-        >E-post: info@adinq.se</a
+      <a class="underline opacity-40 hover:opacity-50" href="tel:0733-28 63 81"
+        >Tel. 0733-28 63 81</a
       >
     </p>
 
+    <SocialMediaIcons class="h-full md:justify-self-end" />
+
     <div
-      class="col-span-1 my-4 h-px w-2/3 justify-self-center bg-gray-200/30 md:col-span-3 xl:w-1/3"
+      class="col-span-1 my-4 h-px w-2/3 justify-self-center bg-black/10 md:col-span-3 xl:w-1/3"
     ></div>
 
     <a

@@ -7,7 +7,7 @@
     >
       <Icon
         name="fa:facebook-square"
-        class="h-6 min-h-6 w-6 min-w-6 opacity-60 transition-opacity duration-300 hover:opacity-75"
+        class="h-6 min-h-6 w-6 min-w-6 opacity-50 transition-opacity duration-300 hover:opacity-100"
       />
     </a>
 
@@ -18,7 +18,7 @@
     >
       <Icon
         name="fa:linkedin-square"
-        class="h-6 min-h-6 w-6 min-w-6 opacity-60 transition-opacity duration-300 hover:opacity-75"
+        class="h-6 min-h-6 w-6 min-w-6 opacity-50 transition-opacity duration-300 hover:opacity-100"
       />
     </a>
 
@@ -29,7 +29,7 @@
     >
       <Icon
         name="fa:youtube-square"
-        class="h-6 min-h-6 w-6 min-w-6 opacity-60 transition-opacity duration-300 hover:opacity-75"
+        class="h-6 min-h-6 w-6 min-w-6 opacity-50 transition-opacity duration-300 hover:opacity-100"
       />
     </a>
   </div>
