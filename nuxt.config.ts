@@ -49,7 +49,7 @@ export default defineNuxtConfig({
       animated: false,
     },
     staticFilename: "[name]-[width]-[height]-[format].[ext]",
-    provider: "ipxStatic",
+    provider: "ipx",
   },
   robots: {
     rules: [
@@ -61,7 +61,8 @@ export default defineNuxtConfig({
       {
         userAgent: "*",
         disallow: "/",
-        comment: "Disallow all robots on 7h-stallning.pages.dev and its subdomains",
+        comment:
+          "Disallow all robots on 7h-stallning.pages.dev and its subdomains",
       },
     ],
     disallowNonStandardSchemes: true,

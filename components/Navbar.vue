@@ -5,8 +5,7 @@ import Button from "./elements/Button.vue";
 <template>
   <div
     id="navbar"
-    ref="navbar"
-    class="relative z-10 mx-[calc(-50vw+50%)] w-screen bg-neutral-950"
+    class="relative z-10 mx-[calc(-50vw+50%)] w-screen bg-neutral-400"
   >
     <div
       v-if="showNavbar"
@@ -19,7 +18,7 @@ import Button from "./elements/Button.vue";
     >
       <router-link to="/">
         <NuxtImg
-          src="adinq_vit.svg"
+          src="7h-logo.png"
           alt="company logo"
           class="h-auto w-24 p-1 xl:w-32 xl:p-2"
         />
@@ -37,7 +36,6 @@ import Button from "./elements/Button.vue";
           showNavbar
             ? 'absolute overflow-auto bg-neutral-950 xl:flex'
             : 'absolute translate-x-100 xl:flex xl:translate-x-0',
-          resizing && 'transition-none',
         ]"
       >
         <Icon
@@ -48,71 +46,18 @@ import Button from "./elements/Button.vue";
           :class="[showNavbar && 'xl:!hidden']"
         />
 
-        <NavbarLink
-          @click="showNavbar = false"
-          icon="heroicons:home"
-          text="Hem"
-          route="/"
-        ></NavbarLink>
-
-        <NavbarLink
-          @click="showNavbar = false"
-          icon="ph:film-slate-light"
-          text="Mediaproduktion"
-          route="/media-produktion"
-        ></NavbarLink>
-
-        <NavbarLink
-          @click="showNavbar = false"
-          icon="fluent:people-32-regular"
-          text="Medarbetare"
-          route="/medarbetare"
-        ></NavbarLink>
-
-        <NavbarLink
-          @click="showNavbar = false"
-          icon="famicons:chatbubble-ellipses-outline"
-          text="Kundutlåtanden"
-          route="/kundutlatanden"
-        ></NavbarLink>
-
-        <NavbarLink
-          @click="showNavbar = false"
-          icon="proicons:chat-question"
-          text="Varför oss"
-          route="/varfor-oss"
-        ></NavbarLink>
-
-        <NavbarLink
-          @click="showNavbar = false"
-          icon="hugeicons:money-bag-01"
-          text="Priser"
-          route="/priser"
-        ></NavbarLink>
-
         <div class="group relative">
           <Button
             @click="showNavbar = false"
             text="Kontakta oss"
             link="/kontakta-oss"
             type="button"
-            styling="light"
+            styling="dark"
             class="w-full opacity-90 transition-opacity duration-300 ease-in-out hover:opacity-100"
-          />
-          <div
-            class="absolute inset-0 z-[-1] w-full rounded-full bg-gradient-to-r from-blue-500 to-green-500 opacity-0 blur-xl transition-all duration-300 ease-in-out group-hover:opacity-100"
-            :class="[
-              currentPath === '/kontakta-oss' &&
-                'bg-gradient-to-r from-pink-500 to-purple-500 opacity-50',
-            ]"
           />
         </div>
 
-        <SocialMediaIcons
-          v-if="showNavbar"
-          class="mt-4"
-          :class="[showNavbar && 'xl:!hidden']"
-        />
+        <SocialMediaIcons class="mt-4" />
       </div>
     </div>
   </div>
@@ -125,8 +70,6 @@ export default {
   data() {
     return {
       showNavbar: false,
-      resizing: false,
-      resizeTimeout: null,
       scrollY: 0,
       originalPaddingRight: 0,
     };
@@ -138,29 +81,7 @@ export default {
     },
   },
 
-  mounted() {
-    window.addEventListener("resize", this.onResize);
-    this.onResize();
-  },
-
-  beforeUnmount() {
-    window.removeEventListener("resize", this.onResize);
-  },
-
   methods: {
-    onResize() {
-      this.$emit("navbarHeight", this.$refs.navbar.offsetHeight);
-      this.resizing = true;
-
-      if (this.resizeTimeout) {
-        clearTimeout(this.resizeTimeout);
-      }
-
-      this.resizeTimeout = setTimeout(() => {
-        this.resizing = false;
-      }, 300);
-    },
-
     stopScrolling() {
       const scrollbarWidth =
         window.innerWidth - document.documentElement.clientWidth;
