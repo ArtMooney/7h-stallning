@@ -17,7 +17,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="relative mx-[calc(-50vw+50%)] w-screen">
+  <div class="relative">
     <h1
       class="mb-8 text-3xl sm:text-4xl md:text-5xl md:leading-12 lg:text-6xl lg:leading-16"
     >
