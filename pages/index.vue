@@ -51,6 +51,32 @@ definePageMeta({
       utrustning för dig.
     </p>
   </div>
+
+  <div class="bg-gray-200 py-20">
+    <h3 class="text-center">Våra Tjänster</h3>
+
+    <div class="grid px-4 md:grid-cols-[0.5fr_0.75fr] md:px-10">
+      <PointBlob
+        class="place-self-center"
+        title="Uthyrning av Byggställningar"
+        :point-lines="[
+          '• Moderna och säkra ställningar',
+          '• Flexibla hyresperioder',
+          '• Snabb leverans',
+        ]"
+      />
+
+      <NuxtImg
+        src="pexels-joshsorenson-154141.jpg"
+        alt=""
+        class="h-full w-full object-cover"
+        sizes="500px md:1000px xl:2000px"
+        width="2560"
+        height="1707"
+        densities="x1"
+      />
+    </div>
+  </div>
 </template>
 
 <script>
