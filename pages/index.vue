@@ -40,11 +40,18 @@ definePageMeta({
         Vi hyr ut och monterar byggnadställningar för alla era projekt, oavsett
         storlek!
       </h1>
-
-      <div class="px-8 text-lg lg:text-2xl">
-        Lokalt, regionalt eller rikstäckande - just DOOH* it!
-      </div>
     </div>
+  </div>
+
+  <div class="px-40 py-20">
+    <h3 class="text-center">Professionella Ställningslösningar</h3>
+
+    <p class="text-center">
+      Behöver du byggställningar för ditt projekt? Vi på 7H Ställning AB
+      erbjuder kompletta lösningar från uthyrning till montering. Oavsett om det
+      gäller småskalig renovering eller större byggprojekt - vi har rätt
+      utrustning för dig.
+    </p>
   </div>
 </template>
 
