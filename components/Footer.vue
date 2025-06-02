@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative grid items-start gap-12 bg-neutral-400 px-12 pt-20 pb-12 md:grid-cols-[0.5fr_1fr_0.5fr] md:gap-8"
+    class="relative grid items-start gap-12 bg-neutral-300 px-12 pt-20 pb-12 md:grid-cols-[0.5fr_1fr_0.5fr] md:gap-8"
   >
     <NuxtLink to="/">
       <NuxtImg

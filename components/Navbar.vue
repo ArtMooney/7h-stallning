@@ -3,10 +3,7 @@ import Button from "./elements/Button.vue";
 </script>
 
 <template>
-  <div
-    id="navbar"
-    class="relative z-10 mx-[calc(-50vw+50%)] w-screen bg-neutral-400"
-  >
+  <div id="navbar" class="relative z-10 bg-white">
     <div
       v-if="showNavbar"
       @click="showNavbar = false"

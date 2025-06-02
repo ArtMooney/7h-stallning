@@ -3,7 +3,7 @@
     class="flex min-h-screen flex-col flex-nowrap items-stretch justify-between"
   >
     <Navbar />
-    <div class="flex flex-grow flex-col">
+    <div class="flex flex-grow flex-col bg-white">
       <slot />
       <div class="mt-auto">
         <Footer />
