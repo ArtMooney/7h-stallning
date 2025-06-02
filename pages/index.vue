@@ -18,7 +18,7 @@ definePageMeta({
 
 <template>
   <div
-    class="relative flex h-[80vh] min-h-[50rem] w-full items-center justify-center p-52 text-center"
+    class="relative flex h-[80vh] min-h-[50rem] w-full items-center justify-center px-4 text-center md:px-52"
   >
     <div class="absolute inset-0">
       <NuxtImg
@@ -35,15 +35,13 @@ definePageMeta({
 
     <div class="absolute inset-0 bg-black opacity-40"></div>
 
-    <div class="relative text-white">
-      <h1>
-        Vi hyr ut och monterar byggnadställningar för alla era projekt, oavsett
-        storlek!
-      </h1>
-    </div>
+    <h1 class="relative px-4 text-white">
+      Vi hyr ut och monterar byggnadställningar för alla era projekt, oavsett
+      storlek!
+    </h1>
   </div>
 
-  <div class="px-40 py-20">
+  <div class="px-8 py-20 md:px-40">
     <h3 class="text-center">Professionella Ställningslösningar</h3>
 
     <p class="text-center">
@@ -58,9 +56,5 @@ definePageMeta({
 <script>
 export default {
   name: "Index",
-
-  data() {
-    return {};
-  },
 };
 </script>

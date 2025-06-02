@@ -22,7 +22,7 @@ export default {
         },
 
         "h1, .h1": {
-          "@apply text-5xl md:text-6xl leading-14 md:leading-18": {},
+          "@apply text-4xl md:text-6xl leading-14 md:leading-18": {},
         },
 
         "h2, .h2": {
