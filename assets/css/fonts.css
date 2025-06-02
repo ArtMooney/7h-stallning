@@ -1,162 +1,135 @@
+/*@font-face {*/
+/*    font-family: 'Lexend';*/
+/*    src: url('../fonts/Lexend-Thin.ttf') format('truetype');*/
+/*    font-weight: 100;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Lexend';*/
+/*    src: url('../fonts/Lexend-ExtraLight.ttf') format('truetype');*/
+/*    font-weight: 200;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Lexend';*/
+/*    src: url('../fonts/Lexend-Light.ttf') format('truetype');*/
+/*    font-weight: 300;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+
 @font-face {
-    font-family: 'Hanuman';
-    src: url('../fonts/Hanuman-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
+/*@font-face {*/
+/*    font-family: 'Lexend';*/
+/*    src: url('../fonts/Lexend-Medium.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Lexend';*/
+/*    src: url('../fonts/Lexend-SemiBold.ttf') format('truetype');*/
+/*    font-weight: 600;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Lexend';*/
+/*    src: url('../fonts/Lexend-Bold.ttf') format('truetype');*/
+/*    font-weight: 700;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Lexend';*/
+/*    src: url('../fonts/Lexend-ExtraBold.ttf') format('truetype');*/
+/*    font-weight: 800;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Lexend';*/
+/*    src: url('../fonts/Lexend-Black.ttf') format('truetype');*/
+/*    font-weight: 900;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+
 @font-face {
-    font-family: 'Hanuman';
-    src: url('../fonts/Hanuman-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 /*@font-face {*/
-/*    font-family: 'Hanuman';*/
-/*    src: url('../fonts/Hanuman-Light.ttf') format('truetype');*/
-/*    font-weight: 300;*/
-/*    font-style: normal;*/
+/*    font-family: 'Lora';*/
+/*    src: url('../fonts/Lora-Italic.ttf') format('truetype');*/
+/*    font-weight: 400;*/
+/*    font-style: italic;*/
+/*    font-display: swap;*/
 /*}*/
 
 /*@font-face {*/
-/*    font-family: 'Hanuman';*/
-/*    src: url('../fonts/Hanuman-Black.ttf') format('truetype');*/
-/*    font-weight: 900;*/
+/*    font-family: 'Lora';*/
+/*    src: url('../fonts/Lora-Medium.ttf') format('truetype');*/
+/*    font-weight: 500;*/
 /*    font-style: normal;*/
+/*    font-display: swap;*/
 /*}*/
 
 /*@font-face {*/
-/*    font-family: 'Hanuman';*/
-/*    src: url('../fonts/Hanuman-Thin.ttf') format('truetype');*/
-/*    font-weight: 100;*/
+/*    font-family: 'Lora';*/
+/*    src: url('../fonts/Lora-MediumItalic.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: italic;*/
+/*    font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Lora';*/
+/*    src: url('../fonts/Lora-SemiBold.ttf') format('truetype');*/
+/*    font-weight: 600;*/
 /*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Lora';*/
+/*    src: url('../fonts/Lora-SemiBoldItalic.ttf') format('truetype');*/
+/*    font-weight: 600;*/
+/*    font-style: italic;*/
+/*    font-display: swap;*/
 /*}*/
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+    font-display: swap;
 }
 
 /*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-Light.ttf') format('truetype');*/
-/*    font-weight: 300;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-Thin.ttf') format('truetype');*/
-/*    font-weight: 100;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-Medium.ttf') format('truetype');*/
-/*    font-weight: 500;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');*/
-/*    font-weight: 600;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');*/
-/*    font-weight: 800;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-Black.ttf') format('truetype');*/
-/*    font-weight: 900;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-ExtraLight.ttf') format('truetype');*/
-/*    font-weight: 200;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-Italic.ttf') format('truetype');*/
-/*    font-weight: normal;*/
+/*    font-family: 'Lora';*/
+/*    src: url('../fonts/Lora-BoldItalic.ttf') format('truetype');*/
+/*    font-weight: 700;*/
 /*    font-style: italic;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-BoldItalic.ttf') format('truetype');*/
-/*    font-weight: bold;*/
-/*    font-style: italic;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-LightItalic.ttf') format('truetype');*/
-/*    font-weight: 300;*/
-/*    font-style: italic;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-ThinItalic.ttf') format('truetype');*/
-/*    font-weight: 100;*/
-/*    font-style: italic;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-MediumItalic.ttf') format('truetype');*/
-/*    font-weight: 500;*/
-/*    font-style: italic;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-SemiBoldItalic.ttf') format('truetype');*/
-/*    font-weight: 600;*/
-/*    font-style: italic;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');*/
-/*    font-weight: 800;*/
-/*    font-style: italic;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-BlackItalic.ttf') format('truetype');*/
-/*    font-weight: 900;*/
-/*    font-style: italic;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Poppins';*/
-/*    src: url('../fonts/Poppins-ExtraLightItalic.ttf') format('truetype');*/
-/*    font-weight: 200;*/
-/*    font-style: italic;*/
+/*    font-display: swap;*/
 /*}*/

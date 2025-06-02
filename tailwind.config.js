@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["Hanuman", "sans-serif"],
-        body: ["Poppins", "sans-serif"],
+        heading: ["Lexend", "sans-serif"],
+        body: ["Lora", "sans-serif"],
       },
     },
   },
