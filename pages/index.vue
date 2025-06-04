@@ -52,8 +52,12 @@ definePageMeta({
     </p>
   </div>
 
-  <div class="bg-gray-200 py-20">
-    <h3 class="text-center">Våra Tjänster</h3>
+  <div class="bg-neutral-200 py-20">
+    <div class="mb-12 flex justify-center">
+      <h3 class="border border-black/25 px-32 py-6 text-center">
+        Våra Tjänster
+      </h3>
+    </div>
 
     <div class="grid px-4 md:grid-cols-[0.5fr_0.75fr] md:px-10">
       <PointBlob
@@ -73,6 +77,29 @@ definePageMeta({
         sizes="500px md:1000px xl:2000px"
         width="2560"
         height="1707"
+        densities="x1"
+      />
+    </div>
+
+    <div class="-20 grid px-4 md:grid-cols-[0.5fr_0.75fr] md:px-10">
+      <PointBlob
+        class="flex items-center place-self-center md:order-last"
+        title="Professionell Montering"
+        :point-lines="[
+          '• Stor erfarenhet',
+          '• Professionell installation',
+          '• Säker installation enligt gällande regler',
+          '• Rådgivning om optimal lösning',
+        ]"
+      />
+
+      <NuxtImg
+        src="fredrik-b-hJ1G1KJpe0w-unsplash.jpg"
+        alt=""
+        class="h-full w-full object-cover"
+        sizes="500px md:1000px xl:2000px"
+        width="3646"
+        height="5469"
         densities="x1"
       />
     </div>

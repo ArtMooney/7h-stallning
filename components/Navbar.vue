@@ -11,7 +11,7 @@ import Button from "./elements/Button.vue";
     ></div>
 
     <div
-      class="mx-auto flex w-full max-w-screen-2xl items-center justify-between p-4 py-2"
+      class="mx-auto flex w-full max-w-screen-2xl items-center justify-between px-8 py-2"
     >
       <router-link to="/">
         <NuxtImg
