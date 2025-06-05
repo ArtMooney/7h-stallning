@@ -52,14 +52,14 @@ definePageMeta({
     </p>
   </div>
 
-  <div class="bg-neutral-200 py-20">
-    <div class="mb-12 flex justify-center">
-      <h3 class="border border-black/25 px-32 py-6 text-center">
-        Våra Tjänster
-      </h3>
-    </div>
+  <div class="bg-neutral-200 py-32">
+    <h3 class="text-center">Våra Tjänster</h3>
 
-    <div class="grid px-4 md:grid-cols-[0.5fr_0.75fr] md:px-10">
+    <div class="mt-8 mb-24 h-px w-2/3 justify-self-center bg-black/10"></div>
+
+    <div
+      class="mb-20 grid px-8 sm:px-12 md:mb-0 md:grid-cols-[0.5fr_0.75fr] xl:px-32"
+    >
       <PointBlob
         class="place-self-center"
         title="Uthyrning av Byggställningar"
@@ -81,7 +81,9 @@ definePageMeta({
       />
     </div>
 
-    <div class="-20 grid px-4 md:grid-cols-[0.5fr_0.75fr] md:px-10">
+    <div
+      class="mb-20 grid px-8 sm:px-12 md:mb-0 md:grid-cols-[0.5fr_0.75fr] xl:px-32"
+    >
       <PointBlob
         class="flex items-center place-self-center md:order-last"
         title="Professionell Montering"
