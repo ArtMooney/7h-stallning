@@ -105,6 +105,16 @@ definePageMeta({
         densities="x1"
       />
     </div>
+
+    <div class="mt-20 bg-black px-8 py-20 text-white md:px-40">
+      <h3 class="text-center">Samarbete med Byggpartners</h3>
+
+      <p class="text-center">
+        Vi har nära samarbete med flera kompetenta partners inom byggbranschen,
+        vilket gör att vi kan erbjuda er hjälp med snickerier, målning och
+        takbyten - oavsett om det gäller tegel, plåt eller papp.
+      </p>
+    </div>
   </div>
 </template>
 
