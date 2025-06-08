@@ -41,7 +41,7 @@ definePageMeta({
     </h1>
   </div>
 
-  <div class="px-8 py-20 md:px-40">
+  <div class="px-8 py-32 md:px-40">
     <h3 class="text-center">Professionella Ställningslösningar</h3>
 
     <p class="text-center">
@@ -53,9 +53,9 @@ definePageMeta({
   </div>
 
   <div class="bg-neutral-200 py-32">
-    <h3 class="text-center">Våra Tjänster</h3>
+    <h2 class="text-center">Våra Tjänster</h2>
 
-    <div class="mt-8 mb-24 h-px w-2/3 justify-self-center bg-black/10"></div>
+    <div class="mt-8 mb-24 h-px w-1/3 justify-self-center bg-black/10"></div>
 
     <div
       class="mb-20 grid px-8 sm:px-12 md:mb-0 md:grid-cols-[0.5fr_0.75fr] xl:px-32"
@@ -106,13 +106,62 @@ definePageMeta({
       />
     </div>
 
-    <div class="mt-20 bg-black px-8 py-20 text-white md:px-40">
+    <div class="my-20 bg-neutral-800 px-8 py-32 text-white md:px-40">
       <h3 class="text-center">Samarbete med Byggpartners</h3>
 
       <p class="text-center">
         Vi har nära samarbete med flera kompetenta partners inom byggbranschen,
         vilket gör att vi kan erbjuda er hjälp med snickerier, målning och
         takbyten - oavsett om det gäller tegel, plåt eller papp.
+      </p>
+
+      <div class="mt-20 mb-24 h-px w-1/3 justify-self-center bg-white/10"></div>
+
+      <h3 class="text-center">Varför Välja 7H Ställning AB?</h3>
+
+      <div class="flex flex-col items-center justify-center gap-2">
+        <p>
+          ✅ Kostnadsfria Offerter - Ring så räknar vi fram det bästa priset för
+          ditt projekt
+        </p>
+        <p>✅ Lokal Närvaro - Vi finns här när du behöver oss</p>
+        <p>✅ Komplett Service - Från planering till nedmontering</p>
+        <p>✅ Säkerhet Först - All utrustning kontrolleras regelbundet</p>
+      </div>
+    </div>
+
+    <div
+      class="grid px-8 sm:px-12 md:mb-0 md:grid-cols-[0.5fr_0.75fr] xl:px-32"
+    >
+      <PointBlob
+        class="flex items-center place-self-center md:order-last"
+        title="Kontakta Oss Idag!"
+        :point-lines="[
+          'Ring för kostnadsfri offert:',
+          '',
+          '📞 Kristoffer: 0704-77 00 70',
+          '📞 Tobias: 0733-28 63 81',
+          '',
+          'Vi återkommer snabbt med en skräddarsydd lösning för ditt projekt!',
+        ]"
+      />
+
+      <NuxtImg
+        src="pexels-alex-andrews-271121-821754.jpg"
+        alt=""
+        class="h-full w-full object-cover"
+        sizes="500px md:1000px xl:2000px"
+        width="4000"
+        height="3000"
+        densities="x1"
+      />
+    </div>
+
+    <div class="bg-neutral-200 py-32">
+      <div class="mb-12 h-px w-1/3 justify-self-center bg-black/10"></div>
+
+      <p class="mx-16 text-center italic">
+        I samarbete med Måleri Viskan och Nordsjö Idé & Design
       </p>
     </div>
   </div>
