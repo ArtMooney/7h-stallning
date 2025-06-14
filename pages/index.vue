@@ -131,6 +131,7 @@ definePageMeta({
     </div>
 
     <div
+      id="contact-section"
       class="grid px-8 sm:px-12 md:mb-0 md:grid-cols-[0.5fr_0.75fr] xl:px-32"
     >
       <PointBlob

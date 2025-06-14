@@ -47,7 +47,8 @@ import Button from "./elements/Button.vue";
           <Button
             @click="showNavbar = false"
             text="Kontakta oss"
-            link="/kontakta-oss"
+            link="/"
+            hash="#contact-section"
             type="button"
             styling="dark"
             class="w-full opacity-90 transition-opacity duration-300 ease-in-out hover:opacity-100"
