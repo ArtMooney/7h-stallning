@@ -100,8 +100,8 @@ definePageMeta({
         alt=""
         class="h-full w-full object-cover"
         sizes="500px md:1000px xl:2000px"
-        width="3463"
-        height="5194"
+        width="3646"
+        height="5469"
         densities="x1"
       />
     </div>
@@ -148,11 +148,11 @@ definePageMeta({
 
       <NuxtImg
         src="fredrik-b-LOuSbGQe504-unsplash.jpg"
-        alt=""
+        alt="byggställning på ett rött hus i solsken"
         class="h-full w-full object-cover"
         sizes="500px md:1000px xl:2000px"
-        width="4000"
-        height="3000"
+        width="3463"
+        height="5194"
         densities="x1"
       />
     </div>
