@@ -106,20 +106,20 @@ definePageMeta({
       />
     </div>
 
-    <div class="my-20 bg-neutral-800 px-8 py-32 text-white md:px-40">
-      <h3 class="text-center">Samarbete med Byggpartners</h3>
+    <div class="my-20 bg-neutral-800 px-8 py-40 text-white md:px-40">
+      <h3 class="mb-8 text-center">Samarbete med Byggpartners</h3>
 
-      <p class="text-center">
+      <p class="px-4 text-center">
         Vi har nära samarbete med flera kompetenta partners inom byggbranschen,
         vilket gör att vi kan erbjuda er hjälp med snickerier, målning och
         takbyten - oavsett om det gäller tegel, plåt eller papp.
       </p>
 
-      <div class="mt-20 mb-24 h-px w-1/3 justify-self-center bg-white/10"></div>
+      <div class="my-40 h-px w-1/3 justify-self-center bg-white/10"></div>
 
-      <h3 class="text-center">Varför Välja 7H Ställning AB?</h3>
+      <h3 class="mb-8 text-center">Varför Välja 7H Ställning AB?</h3>
 
-      <div class="flex flex-col items-center justify-center gap-2">
+      <div class="flex flex-col items-center justify-center gap-2 px-4">
         <p>
           ✅ Kostnadsfria Offerter - Ring så räknar vi fram det bästa priset för
           ditt projekt
