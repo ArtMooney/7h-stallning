@@ -100,8 +100,8 @@ definePageMeta({
         alt=""
         class="h-full w-full object-cover"
         sizes="500px md:1000px xl:2000px"
-        width="3646"
-        height="5469"
+        width="3463"
+        height="5194"
         densities="x1"
       />
     </div>
@@ -147,7 +147,7 @@ definePageMeta({
       />
 
       <NuxtImg
-        src="pexels-alex-andrews-271121-821754.jpg"
+        src="fredrik-b-LOuSbGQe504-unsplash.jpg"
         alt=""
         class="h-full w-full object-cover"
         sizes="500px md:1000px xl:2000px"
