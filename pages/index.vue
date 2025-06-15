@@ -64,10 +64,12 @@ definePageMeta({
         class="place-self-center"
         title="Uthyrning av Byggställningar"
         :point-lines="[
-          '• Moderna och säkra ställningar',
-          '• Flexibla hyresperioder',
-          '• Snabb leverans',
+          'Moderna och säkra ställningar',
+          'Flexibla hyresperioder',
+          'Snabb leverans',
         ]"
+        point-type="dot"
+        point-width="small"
       />
 
       <NuxtImg
@@ -88,11 +90,13 @@ definePageMeta({
         class="flex items-center place-self-center md:order-last"
         title="Professionell Montering"
         :point-lines="[
-          '• Stor erfarenhet',
-          '• Professionell installation',
-          '• Säker installation enligt gällande regler',
-          '• Rådgivning om optimal lösning',
+          'Stor erfarenhet',
+          'Professionell installation',
+          'Säker installation enligt gällande regler',
+          'Rådgivning om optimal lösning',
         ]"
+        point-type="dot"
+        point-width="small"
       />
 
       <NuxtImg
@@ -119,15 +123,17 @@ definePageMeta({
 
       <h3 class="mb-8 text-center">Varför Välja 7H Ställning AB?</h3>
 
-      <div class="flex flex-col items-center justify-center gap-2 px-4">
-        <p>
-          ✅ Kostnadsfria Offerter - Ring så räknar vi fram det bästa priset för
-          ditt projekt
-        </p>
-        <p>✅ Lokal Närvaro - Vi finns här när du behöver oss</p>
-        <p>✅ Komplett Service - Från planering till nedmontering</p>
-        <p>✅ Säkerhet Först - All utrustning kontrolleras regelbundet</p>
-      </div>
+      <PointBlob
+        class="flex items-center place-self-center md:order-last [&_ul]:items-center"
+        :point-lines="[
+          'Kostnadsfria Offerter - Ring så räknar vi fram det bästa priset för ditt projekt',
+          'Lokal Närvaro - Vi finns här när du behöver oss',
+          'Komplett Service - Från planering till nedmontering',
+          'Säkerhet Först - All utrustning kontrolleras regelbundet',
+        ]"
+        point-type="checkbox"
+        point-width="medium"
+      />
     </div>
 
     <div
@@ -158,7 +164,7 @@ definePageMeta({
       />
     </div>
 
-    <div class="bg-neutral-200 py-32">
+    <div class="bg-neutral-200 pt-32">
       <div class="mb-12 h-px w-1/3 justify-self-center bg-black/10"></div>
 
       <p class="mx-16 text-center italic">
