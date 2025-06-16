@@ -124,7 +124,7 @@ definePageMeta({
       <h3 class="mb-8 text-center">Varför Välja 7H Ställning AB?</h3>
 
       <PointBlob
-        class="flex items-center place-self-center md:order-last [&_ul]:items-center"
+        class="flex items-center place-self-center md:order-last [&_li]:text-center [&_ul]:items-center"
         :point-lines="[
           'Kostnadsfria Offerter - Ring så räknar vi fram det bästa priset för ditt projekt',
           'Lokal Närvaro - Vi finns här när du behöver oss',
