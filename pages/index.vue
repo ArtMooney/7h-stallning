@@ -1,14 +1,18 @@
 <script setup>
 useSeoMeta({
-  title: "",
-  description: "",
-  ogTitle: "",
-  ogDescription: "",
-  ogImage: "",
-  twitterCard: "",
-  twitterTitle: "",
-  twitterDescription: "",
-  twitterImage: "",
+  title:
+    "7H Ställning AB - Uthyrning & Montering av Byggställningar | Professionella Ställningslösningar",
+  description:
+    "7H Ställning AB erbjuder uthyrning och professionell montering av byggställningar. Moderna säkra ställningar, flexibla hyresperioder och snabb leverans. Ring för kostnadsfri offert!",
+  ogTitle: "7H Ställning AB - Uthyrning & Montering av Byggställningar",
+  ogDescription:
+    "Professionella byggställningar för alla projekt. Uthyrning, montering och komplett service. Kostnadsfria offerter och lokal närvaro. Kontakta oss idag!",
+  ogImage: "/jackson-allan-M48wzb6VlEA-unsplash.jpg",
+  twitterCard: "summary_large_image",
+  twitterTitle: "7H Ställning AB - Byggställningar & Professionell Montering",
+  twitterDescription:
+    "Moderna byggställningar, professionell montering och flexibla lösningar för alla byggprojekt. Ring för kostnadsfri offert!",
+  twitterImage: "/jackson-allan-M48wzb6VlEA-unsplash.jpg",
 });
 
 definePageMeta({
