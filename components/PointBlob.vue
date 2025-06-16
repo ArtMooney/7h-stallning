@@ -8,7 +8,7 @@
           <span v-if="getPointSymbol" class="absolute" :class="getPointWidth">{{
             getPointSymbol
           }}</span>
-          {{ line }}
+          <span v-html="line"></span>
         </li>
       </ul>
     </div>
