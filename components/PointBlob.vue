@@ -1,7 +1,7 @@
 <template>
   <div class="h-fit w-fit">
     <div class="gap-2 p-8">
-      <h4 v-if="title" class="font-bold" :class="getPointWidth">{{ title }}</h4>
+      <h4 v-if="title" :class="getPointWidth">{{ title }}</h4>
 
       <ul v-if="pointLines" class="flex flex-col space-y-4 leading-normal">
         <li v-for="line in pointLines">

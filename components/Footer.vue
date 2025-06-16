@@ -2,11 +2,11 @@
   <div
     class="relative grid items-start gap-12 bg-neutral-300 px-12 pt-20 pb-12 md:grid-cols-[0.5fr_1fr_0.5fr] md:gap-8"
   >
-    <NuxtLink to="/">
+    <NuxtLink to="/" class="!justify-self-center md:justify-self-start">
       <NuxtImg
         src="7h-logo.png"
         alt="footer logo"
-        class="relative h-auto w-20 min-w-20 justify-self-center opacity-50 transition-opacity duration-300 ease-in-out hover:opacity-100 md:justify-self-start"
+        class="relative h-auto w-20 min-w-20 opacity-50 transition-opacity duration-300 ease-in-out hover:opacity-100"
       />
     </NuxtLink>
 
