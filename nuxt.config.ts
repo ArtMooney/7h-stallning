@@ -69,7 +69,7 @@ export default defineNuxtConfig({
     sitemap: "",
   },
   site: {
-    url: "",
+    url: "https://7h-stallning.se",
   },
   sitemap: {
     hostname: "",
