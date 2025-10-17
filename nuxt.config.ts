@@ -2,19 +2,24 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2025-04-28",
+  compatibilityDate: "2025-09-04",
+
   devtools: { enabled: true },
+
   css: ["/assets/css/main.css"],
+
   vite: {
     plugins: [tailwindcss()],
   },
+
   nitro: {
     preset: "cloudflare-pages",
     prerender: {
-      crawlLinks: true,
+      crawlLinks: false,
       ignore: [],
     },
   },
+
   runtimeConfig: {
     mailgunApiKey: process.env.NUXT_MAILGUN_API_KEY,
     baserowToken: process.env.NUXT_BASEROW_TOKEN,
@@ -28,7 +33,9 @@ export default defineNuxtConfig({
       userPass: process.env.NUXT_PUBLIC_USERPASS,
     },
   },
+
   modules: ["@nuxtjs/robots", "@nuxtjs/sitemap", "@nuxt/image", "@nuxt/icon"],
+
   image: {
     dir: "assets/images",
     format: ["webp", "jpg", "png"],
@@ -51,33 +58,44 @@ export default defineNuxtConfig({
     staticFilename: "[name]-[width]-[height]-[format].[ext]",
     provider: "ipxStatic",
   },
+
   robots: {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-        sitemap: "",
-      },
-      {
-        userAgent: "*",
-        disallow: "/",
-        comment:
-          "Disallow all robots on 7h-stallning.pages.dev and its subdomains",
-      },
-    ],
-    disallowNonStandardSchemes: true,
-    sitemap: "",
+    rules: () => {
+      if (
+        process.env.NUXT_PUBLIC_SITE_URL?.includes("pages.dev") ||
+        process.env.CF_PAGES_URL?.includes("pages.dev")
+      ) {
+        return [
+          {
+            userAgent: "*",
+            disallow: "/",
+          },
+        ];
+      }
+
+      return [
+        {
+          userAgent: "*",
+          allow: "/",
+        },
+      ];
+    },
   },
+
   site: {
-    url: "https://7h-stallning.se",
+    url: process.env.CF_PAGES_URL || process.env.NUXT_PUBLIC_SITE_URL,
   },
+
   sitemap: {
     hostname: "",
     gzip: true,
   },
+
   app: {
     keepalive: true,
     head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
       link: [
         {
           rel: "icon",
@@ -94,51 +112,12 @@ export default defineNuxtConfig({
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
         { rel: "manifest", href: "/site.webmanifest" },
-        { rel: "canonical", href: "" },
       ],
-      charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1",
-      title: "",
       meta: [
         {
-          name: "description",
-          content: "",
-        },
-        {
-          name: "keywords",
-          content: "",
-        },
-
-        // Open Graph / Facebook
-        { property: "og:type", content: "website" },
-        { property: "og:url", content: "" },
-        {
-          property: "og:title",
-          content: "",
-        },
-        {
-          property: "og:description",
-          content: "",
-        },
-        {
-          property: "og:image",
-          content: "",
-        },
-
-        // Twitter
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:url", content: "" },
-        {
-          name: "twitter:title",
-          content: "",
-        },
-        {
-          name: "twitter:description",
-          content: "",
-        },
-        {
-          name: "twitter:image",
-          content: "",
+          name: "viewport",
+          content:
+            "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
         },
       ],
     },
