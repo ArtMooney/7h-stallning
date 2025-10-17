@@ -34,7 +34,12 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/robots", "@nuxtjs/sitemap", "@nuxt/image", "@nuxt/icon"],
+  modules: [
+    "@nuxtjs/robots",
+    "@nuxtjs/sitemap",
+    "@nuxt/image",
+    "unplugin-icons/nuxt",
+  ],
 
   image: {
     dir: "assets/images",
