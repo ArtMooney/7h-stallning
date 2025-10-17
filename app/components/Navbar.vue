@@ -12,6 +12,11 @@ import Button from "./elements/Button.vue";
         src="7h-logo.png"
         alt="company logo"
         class="h-auto w-24 p-1 xl:w-32 xl:p-2"
+        sizes="100px md:300px"
+        width="718"
+        height="518"
+        densities="x1"
+        format="webp"
       />
     </NuxtLink>
 

@@ -42,9 +42,17 @@ export default defineNuxtConfig({
   ],
 
   image: {
-    dir: "assets/images",
-    format: ["webp", "jpg", "png"],
-    quality: 80,
+    provider: "weserv",
+    domains: [process.env.NUXT_PUBLIC_SITE_URL?.replace("https://", "") || ""],
+
+    weserv: {
+      baseURL: "https://pub-27b7ffede5804e1381d74a16e0e56bee.r2.dev",
+      modifiers: {
+        format: "webp",
+        quality: 65,
+      },
+    },
+
     screens: {
       xs: 320,
       sm: 640,
@@ -52,16 +60,7 @@ export default defineNuxtConfig({
       lg: 1024,
       xl: 1280,
       xxl: 1536,
-      "2xl": 1536,
     },
-    densities: [1, 2],
-    modifiers: {
-      format: "webp",
-      quality: 80,
-      animated: false,
-    },
-    staticFilename: "[name]-[width]-[height]-[format].[ext]",
-    provider: "ipxStatic",
   },
 
   robots: {

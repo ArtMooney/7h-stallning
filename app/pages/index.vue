@@ -29,11 +29,11 @@ definePageMeta({
         src="jackson-allan-M48wzb6VlEA-unsplash.jpg"
         alt=""
         class="h-full w-full object-cover"
-        sizes="1000px md:2000px"
-        width="3241"
-        height="4862"
+        sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
+        width="2000"
+        height="3000"
         densities="x1"
-        placeholder
+        format="webp"
       />
     </div>
 
@@ -82,10 +82,11 @@ definePageMeta({
         src="pexels-joshsorenson-154141.jpg"
         alt=""
         class="h-full w-full object-cover"
-        sizes="500px md:1000px xl:2000px"
-        width="2560"
-        height="1707"
+        sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
+        width="2000"
+        height="1334"
         densities="x1"
+        format="webp"
       />
     </div>
 
@@ -109,10 +110,11 @@ definePageMeta({
         src="fredrik-b-hJ1G1KJpe0w-unsplash.jpg"
         alt=""
         class="h-full w-full object-cover"
-        sizes="500px md:1000px xl:2000px"
-        width="3646"
-        height="5469"
+        sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
+        width="2000"
+        height="3000"
         densities="x1"
+        format="webp"
       />
     </div>
 
@@ -167,10 +169,11 @@ definePageMeta({
         src="fredrik-b-LOuSbGQe504-unsplash.jpg"
         alt="byggställning på ett rött hus i solsken"
         class="h-full w-full object-cover"
-        sizes="500px md:1000px xl:2000px"
-        width="3463"
-        height="5194"
+        sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
+        width="2000"
+        height="3000"
         densities="x1"
+        format="webp"
       />
     </div>
 

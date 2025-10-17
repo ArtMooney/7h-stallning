@@ -7,6 +7,11 @@
         src="7h-logo.png"
         alt="footer logo"
         class="relative h-auto w-20 min-w-20 opacity-50 transition-opacity duration-300 ease-in-out hover:opacity-100"
+        sizes="100px md:300px"
+        width="718"
+        height="518"
+        densities="x1"
+        format="webp"
       />
     </NuxtLink>
 
