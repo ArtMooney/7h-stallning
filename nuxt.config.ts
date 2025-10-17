@@ -92,7 +92,6 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    hostname: "",
     gzip: true,
   },
 
