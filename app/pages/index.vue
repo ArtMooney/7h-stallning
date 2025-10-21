@@ -79,12 +79,12 @@ definePageMeta({
       />
 
       <NuxtImg
-        src="house-behind-scaffolding.jpg"
-        alt="a house covered in scaffolding on a sunny day with blue sky"
+        src="red-house-scaffolding.jpg"
+        alt="a red brick house dressed in scaffolding"
         class="h-full w-full object-cover"
-        sizes="320px sm:640px md:768px lg:1024px"
-        width="931"
-        height="930"
+        sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
+        width="1512"
+        height="2016"
         densities="x1"
         format="webp"
       />
@@ -129,9 +129,16 @@ definePageMeta({
         takbyten - oavsett om det gäller tegel, plåt eller papp.
       </p>
 
-      <div
-        class="mx-auto my-40 h-px w-1/3 justify-self-center bg-white/10"
-      ></div>
+      <NuxtImg
+        src="white-house-and-scaffolding.jpg"
+        alt="a white wood house covered with scaffolding"
+        class="my-24 w-full sm:w-120 sm:max-w-120 sm:min-w-120"
+        sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
+        width="3024"
+        height="4032"
+        densities="x1"
+        format="webp"
+      />
 
       <h3 class="mb-8 text-center">Varför Välja 7H Ställning AB?</h3>
 
