@@ -22,16 +22,16 @@ definePageMeta({
 
 <template>
   <div
-    class="relative flex h-[80vh] min-h-[50rem] w-full items-center justify-center px-4 text-center md:px-52"
+    class="relative flex h-[65vh] min-h-[50rem] w-full items-center justify-center px-4 text-center md:pl-52 lg:pl-100 xl:pl-140"
   >
     <div class="absolute inset-0">
       <NuxtImg
-        src="jackson-allan-M48wzb6VlEA-unsplash.jpg"
-        alt=""
+        src="man-on-scaffold.jpg"
+        alt="man walking on scaffold in city and with autumn leaves in the background"
         class="h-full w-full object-cover"
         sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
-        width="2000"
-        height="3000"
+        width="2048"
+        height="956"
         densities="x1"
         format="webp"
       />
@@ -45,7 +45,7 @@ definePageMeta({
     </h1>
   </div>
 
-  <div class="px-8 py-32 md:px-40">
+  <div class="px-8 py-32 md:px-52 xl:px-96">
     <h3 class="text-center">Professionella Ställningslösningar</h3>
 
     <p class="text-center">
@@ -79,12 +79,12 @@ definePageMeta({
       />
 
       <NuxtImg
-        src="pexels-joshsorenson-154141.jpg"
-        alt=""
+        src="house-behind-scaffolding.jpg"
+        alt="a house covered in scaffolding on a sunny day with blue sky"
         class="h-full w-full object-cover"
-        sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
-        width="2000"
-        height="1334"
+        sizes="320px sm:640px md:768px lg:1024px"
+        width="931"
+        height="930"
         densities="x1"
         format="webp"
       />
@@ -107,12 +107,12 @@ definePageMeta({
       />
 
       <NuxtImg
-        src="fredrik-b-hJ1G1KJpe0w-unsplash.jpg"
-        alt=""
+        src="man-looking-out-from-scaffold.jpg"
+        alt="a man in a yellow west looking out from a scaffolding construction in a city"
         class="h-full w-full object-cover"
-        sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
-        width="2000"
-        height="3000"
+        sizes="320px sm:640px md:768px lg:1024px"
+        width="956"
+        height="2048"
         densities="x1"
         format="webp"
       />
@@ -166,12 +166,12 @@ definePageMeta({
       />
 
       <NuxtImg
-        src="fredrik-b-LOuSbGQe504-unsplash.jpg"
-        alt="byggställning på ett rött hus i solsken"
+        src="inside-scaffolding-construction.jpg"
+        alt="scaffolding construction at side of a house wall and with protective garment on the other side"
         class="h-full w-full object-cover"
-        sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
-        width="2000"
-        height="3000"
+        sizes="320px sm:640px md:768px lg:1024px xl:1280px"
+        width="1170"
+        height="1560"
         densities="x1"
         format="webp"
       />
