@@ -158,8 +158,8 @@ definePageMeta({
         :point-lines="[
           'Ring för kostnadsfri offert:',
           '',
-          '📞 Kristoffer: <a href=\'tel:0704770070\' class=\'underline hover:opacity-75\'>0704-77 00 70</a>',
-          '📞 Tobias: <a href=\'tel:0733286381\' class=\'underline hover:opacity-75\'>0733-28 63 81</a>',
+          '📞 Kristoffer: <a href=\'tel:0733286381\' class=\'underline hover:opacity-75\'>0733-28 63 81</a>',
+          '📞 Tobias: <a href=\'tel:0704770070\' class=\'underline hover:opacity-75\'>0704-77 00 70</a>',
           '',
           'Vi återkommer snabbt med en skräddarsydd lösning för ditt projekt!',
         ]"
