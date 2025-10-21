@@ -1,7 +1,16 @@
 import plugin from "tailwindcss/plugin";
 
 export default {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./composables/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
+    "./nuxt.config.{js,ts}",
+  ],
   theme: {
     extend: {
       fontFamily: {
