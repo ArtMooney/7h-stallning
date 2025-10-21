@@ -43,7 +43,6 @@ export default defineNuxtConfig({
 
   image: {
     provider: "weserv",
-    domains: [process.env.NUXT_PUBLIC_SITE_URL?.replace("https://", "") || ""],
 
     weserv: {
       baseURL: "https://pub-27b7ffede5804e1381d74a16e0e56bee.r2.dev",
