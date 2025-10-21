@@ -1,7 +1,3 @@
-<script setup>
-import Button from "./elements/Button.vue";
-</script>
-
 <template>
   <div
     id="navbar"
@@ -20,14 +16,13 @@ import Button from "./elements/Button.vue";
       />
     </NuxtLink>
 
-    <Button
-      text="Kontakta oss"
-      link="/"
-      hash="#contact-section"
-      type="button"
-      styling="dark"
-      class="opacity-90 transition-opacity duration-300 ease-in-out hover:opacity-100"
-    />
+    <NuxtLink to="/#contact-section">
+      <button
+        class="min-w-40 cursor-pointer rounded bg-neutral-700 px-6 py-3 text-center text-sm text-white duration-200 hover:bg-neutral-900"
+      >
+        Kontakta oss
+      </button>
+    </NuxtLink>
   </div>
 </template>
 
