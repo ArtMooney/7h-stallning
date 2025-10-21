@@ -28,7 +28,7 @@ definePageMeta({
       <NuxtImg
         src="man-on-scaffold.jpg"
         alt="man walking on scaffold in city and with autumn leaves in the background"
-        class="h-full w-full object-cover"
+        class="h-full w-full object-cover object-[10%_50%] sm:object-[50%_50%]"
         sizes="320px sm:640px md:768px lg:1024px xl:1280px xxl:1536px"
         width="2048"
         height="956"
