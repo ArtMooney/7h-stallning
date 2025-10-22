@@ -201,7 +201,7 @@ definePageMeta({
       ></div>
 
       <p class="mx-16 text-center italic">
-        I samarbete med Måleri Viskan och Nordsjö Idé & Design
+        I samarbete med Nordsjö Idé & Design
       </p>
     </div>
   </div>
