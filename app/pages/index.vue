@@ -29,7 +29,7 @@ definePageMeta({
         src="man-on-scaffold.jpg"
         alt="man walking on scaffold in city and with autumn leaves in the background"
         class="h-full w-full object-cover object-[10%_50%] sm:object-[50%_50%]"
-        sizes="1024px xl:1280px xxl:1536px"
+        sizes="1024px xl:1280px 2xl:1536px"
         width="2048"
         height="956"
         densities="x1"
