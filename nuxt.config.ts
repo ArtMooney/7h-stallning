@@ -64,10 +64,7 @@ export default defineNuxtConfig({
 
   robots: {
     rules: () => {
-      if (
-        process.env.NUXT_PUBLIC_SITE_URL?.includes("pages.dev") ||
-        process.env.CF_PAGES_URL?.includes("pages.dev")
-      ) {
+      if (process.env.CF_PAGES_BRANCH !== "main") {
         return [
           {
             userAgent: "*",
@@ -86,7 +83,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: process.env.CF_PAGES_URL || process.env.NUXT_PUBLIC_SITE_URL,
+    url: process.env.NUXT_PUBLIC_SITE_URL || process.env.CF_PAGES_URL,
   },
 
   sitemap: {
