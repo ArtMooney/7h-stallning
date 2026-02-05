@@ -37,114 +37,51 @@ const getSeoSchema = () => ({
 });
 
 export const staticContentTypes = {
-  "component - Home": {
+  "page - Index": {
     heading: {
       title: "text",
-      subtitle: "text",
+      image: "fileImg",
+      imageAlt: "text",
     },
-    blob1: {
-      title: "text",
-      content: "textarea",
-    },
-    blob2: {
-      title: "text",
-      content: "textarea",
-    },
-    blob3: {
-      title: "text",
-      content: "textarea",
-    },
-  },
-  "component - Navbar": {
-    buttons: {
-      home: "text",
-      services: "text",
-      contactUs: "text",
-    },
-  },
-  "component - Footer": {
-    buttons: {
-      home: "text",
-      services: "text",
-      contactUs: "text",
-    },
-  },
-  "component - CompanyInfo": {
-    company: "text",
-    address: "text",
-    address2: "text",
-    phone: "text",
-    email: "text",
-  },
-  "component - Contact": {
-    heading: {
-      title: "text",
-    },
-    formTitleBlock: {
+    section: {
       title: "text",
       text: "textarea",
     },
-    contactTel: {
-      text: "text",
-      phone: "text",
-    },
-    contactEmail: {
-      text: "text",
-      email: "text",
-    },
-    contactAddress: {
+    services: {
       title: "text",
-      address: "text",
-      address2: "text",
+      listTitle1: "text",
+      listText1: "textarea",
+      image1: "fileImg",
+      image1Alt: "text",
+      listTitle2: "text",
+      listText2: "textarea",
+      image2: "fileImg",
+      image2Alt: "text",
     },
-  },
-  "component - Services": {
-    heading: {
+    cooperation: {
       title: "text",
+      text: "textarea",
+      imageLeft: "fileImg",
+      imageLeftAlt: "text",
+      imageRight: "fileImg",
+      imageRightAlt: "text",
     },
-    pointBlock1: {
+    whyChooseUs: {
       title: "text",
       text: "textarea",
     },
-    pointBlock2: {
+    contact: {
       title: "text",
       text: "textarea",
+      phoneName1: "text",
+      phoneNumber1: "text",
+      phoneName2: "text",
+      phoneNumber2: "text",
+      serviceText: "textarea",
+      image: "fileImg",
+      imageAlt: "text",
     },
-    pointBlock3: {
-      title: "text",
-      text: "textarea",
-    },
-    pointBlock4: {
-      title: "text",
-      text: "textarea",
-    },
-    pointBlock5: {
-      title: "text",
-      text: "textarea",
-    },
-    pointBlock6: {
-      title: "text",
-      text: "textarea",
-    },
-    pointBlock7: {
-      title: "text",
-      text: "textarea",
-    },
-    AccordionsTitle: "text",
-    Accordion1: {
-      title: "text",
-      text: "textarea",
-    },
-    Accordion2: {
-      title: "text",
-      text: "textarea",
-    },
-    Accordion3: {
-      title: "text",
-      text: "textarea",
-    },
-    Accordion4: {
-      title: "text",
+    pageSubtext: {
       text: "textarea",
     },
   },
