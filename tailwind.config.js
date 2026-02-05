@@ -1,4 +1,5 @@
 import plugin from "tailwindcss/plugin";
+import { cmsStyles } from "./tailwind.cms.styles.js";
 
 export default {
   content: [
@@ -55,7 +56,10 @@ export default {
         },
       });
     }),
+
+    cmsStyles,
   ],
+
   corePlugins: {
     preflight: true,
   },
