@@ -22,7 +22,7 @@ definePageMeta({
 
 <template>
   <div
-    class="relative flex h-[65vh] min-h-[50rem] w-full items-center justify-center px-4 text-center md:pl-52 lg:pl-100 xl:pl-140"
+    class="relative flex h-[65vh] min-h-200 w-full items-center justify-center px-4 text-center md:pl-52 lg:pl-100 xl:pl-140"
   >
     <div class="absolute inset-0">
       <NuxtImg
