@@ -1,8 +1,13 @@
+<script setup>
+import IconHeart from "~icons/emojione-v1/growing-heart";
+import IconEdit from "~icons/mage/edit";
+</script>
+
 <template>
   <div
     class="relative grid items-center gap-12 bg-neutral-300 px-12 pt-20 pb-12 md:grid-cols-[0.5fr_2fr_0.5fr] md:gap-8"
   >
-    <NuxtLink to="/" class="!justify-self-center md:justify-self-start">
+    <NuxtLink to="/" class="justify-self-center! md:justify-self-start">
       <NuxtImg
         src="7h-logo.png"
         alt="footer logo"
@@ -32,17 +37,15 @@
       <span><IconHeart class="h-6 min-h-6 w-6 min-w-6 px-1" /></span>
       FrameCore
     </a>
+
+    <NuxtLink to="/admin" class="absolute bottom-2 left-2">
+      <IconEdit class="size-6 opacity-20 hover:opacity-30" />
+    </NuxtLink>
   </div>
 </template>
 
 <script>
-import IconHeart from "~icons/emojione-v1/growing-heart";
-
 export default {
   name: "Footer",
-
-  components: {
-    IconHeart,
-  },
 };
 </script>
