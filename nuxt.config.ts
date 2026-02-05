@@ -2,7 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2025-09-04",
+  compatibilityDate: "2026-02-01",
 
   devtools: { enabled: true },
 
@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: "cloudflare-pages",
+    preset: "cloudflare_pages",
     prerender: {
       crawlLinks: false,
       ignore: [],
@@ -22,7 +22,6 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     mailgunApiKey: process.env.NUXT_MAILGUN_API_KEY,
-    baserowToken: process.env.NUXT_BASEROW_TOKEN,
     emailFrom: process.env.NUXT_EMAIL_FROM,
     emailTo: process.env.NUXT_EMAIL_TO,
     userName: process.env.NUXT_USERNAME,
@@ -31,6 +30,8 @@ export default defineNuxtConfig({
     public: {
       userName: process.env.NUXT_PUBLIC_USERNAME,
       userPass: process.env.NUXT_PUBLIC_USERPASS,
+      imageBaseUrl: process.env.NUXT_PUBLIC_IMAGE_BASE_URL,
+      publicSiteUrl: process.env.NUXT_PUBLIC_SITE_URL,
     },
   },
 
@@ -39,6 +40,8 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "@nuxt/image",
     "unplugin-icons/nuxt",
+    "@pinia/nuxt",
+    "pinia-plugin-persistedstate/nuxt",
   ],
 
   image: {
@@ -93,6 +96,9 @@ export default defineNuxtConfig({
   app: {
     keepalive: true,
     head: {
+      htmlAttrs: {
+        lang: "sv-SE",
+      },
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       link: [
@@ -112,12 +118,12 @@ export default defineNuxtConfig({
         { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
         { rel: "manifest", href: "/site.webmanifest" },
       ],
-      meta: [
-        {
-          name: "google-site-verification",
-          content: "IF-dbCqGZqu0URdtx7dE4KzZgz_66_xGX8_5dJIQ68U",
-        },
-      ],
+      // meta: [
+      //   {
+      //     name: "google-site-verification",
+      //     content: "",
+      //   },
+      // ],
     },
   },
 });

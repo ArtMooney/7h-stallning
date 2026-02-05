@@ -1,0 +1,14 @@
+name = "7h-stallning"
+compatibility_date = "2026-02-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "7hstallning"
+database_id = "26781f0a-2bad-4de4-a316-06f265fd7dcb"
+migrations_dir = "migrations"
+#remote = true
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "7hstallning"
+remote = true

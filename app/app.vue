@@ -1,9 +1,12 @@
 <script setup>
-useHead({
-  htmlAttrs: {
-    lang: "sv",
-  },
+import { useStaticContentStore } from "~/stores/static-content.js";
 
+const config = useRuntimeConfig();
+const imageBaseUrl = config.public.imageBaseUrl;
+const staticContentStore = useStaticContentStore();
+await staticContentStore.loadContent();
+
+useHead({
   script: [
     {
       key: "schema-org-data",
@@ -12,7 +15,7 @@ useHead({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         name: "7H Ställning AB",
-        image: "/man-on-scaffold.jpg",
+        image: `${imageBaseUrl}/man-on-scaffold.jpg`,
         url: "https://www.7hstallning.se",
         telephone: "+46733286381",
         email: "",
