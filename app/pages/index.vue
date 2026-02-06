@@ -1,19 +1,12 @@
 <script setup>
-useSeoMeta({
-  title:
-    "7H Ställning AB - Uthyrning & Montering av Byggställningar | Professionella Ställningslösningar",
-  description:
-    "7H Ställning AB erbjuder uthyrning och professionell montering av byggställningar. Moderna säkra ställningar, flexibla hyresperioder och snabb leverans. Ring för kostnadsfri offert!",
-  ogTitle: "7H Ställning AB - Uthyrning & Montering av Byggställningar",
-  ogDescription:
-    "Professionella byggställningar för alla projekt. Uthyrning, montering och komplett service. Kostnadsfria offerter och lokal närvaro. Kontakta oss idag!",
-  ogImage: "/jackson-allan-M48wzb6VlEA-unsplash.jpg",
-  twitterCard: "summary_large_image",
-  twitterTitle: "7H Ställning AB - Byggställningar & Professionell Montering",
-  twitterDescription:
-    "Moderna byggställningar, professionell montering och flexibla lösningar för alla byggprojekt. Ring för kostnadsfri offert!",
-  twitterImage: "/jackson-allan-M48wzb6VlEA-unsplash.jpg",
-});
+const config = useRuntimeConfig();
+const imageBaseUrl = config.public.imageBaseUrl;
+const staticContentStore = useStaticContentStore();
+const staticContent = computed(
+  () => staticContentStore.getContentByTitle("page - Index").content,
+);
+
+useCmsSeo("SEO page - Index");
 
 definePageMeta({
   ssr: true,
@@ -26,8 +19,8 @@ definePageMeta({
   >
     <div class="absolute inset-0">
       <NuxtImg
-        src="man-on-scaffold.jpg"
-        alt="man walking on scaffold in city and with autumn leaves in the background"
+        :src="`${imageBaseUrl}/cms-files/${staticContent.heading.image}`"
+        :alt="staticContent.heading.imageAlt"
         class="h-full w-full object-cover object-[10%_50%] sm:object-[50%_50%]"
         sizes="1024px xl:1280px 2xl:1536px"
         width="2048"
@@ -40,24 +33,18 @@ definePageMeta({
     <div class="absolute inset-0 bg-black opacity-40"></div>
 
     <h1 class="relative px-4 text-white">
-      Vi hyr ut och monterar byggnadställningar för alla era projekt, oavsett
-      storlek!
+      {{ staticContent.heading.title }}
     </h1>
   </div>
 
   <div class="px-8 py-32 md:px-52 xl:px-96">
-    <h3 class="text-center">Professionella Ställningslösningar</h3>
+    <h3 class="text-center">{{ staticContent.section.title }}</h3>
 
-    <p class="text-center">
-      Behöver du byggställningar för ditt projekt? Vi på 7H Ställning AB
-      erbjuder kompletta lösningar från uthyrning till montering. Oavsett om det
-      gäller småskalig renovering eller större byggprojekt - vi har rätt
-      utrustning för dig.
-    </p>
+    <p v-html="formatText(staticContent.section.text)" class="text-center"></p>
   </div>
 
   <div class="bg-neutral-200 py-32">
-    <h2 class="text-center">Våra Tjänster</h2>
+    <h2 class="text-center">{{ staticContent.services.title }}</h2>
 
     <div
       class="mx-auto mt-8 mb-24 h-px w-1/3 justify-self-center bg-black/10"
@@ -68,19 +55,13 @@ definePageMeta({
     >
       <PointBlob
         class="place-self-center"
-        title="Uthyrning av Byggställningar"
-        :point-lines="[
-          'Moderna och säkra ställningar',
-          'Flexibla hyresperioder',
-          'Snabb leverans',
-        ]"
-        point-type="dot"
-        point-width="small"
+        :title="staticContent.services.listTitle1"
+        :text="staticContent.services.listText1"
       />
 
       <NuxtImg
-        src="red-house-scaffolding.jpg"
-        alt="a red brick house dressed in scaffolding"
+        :src="`${imageBaseUrl}/cms-files/${staticContent.services.image1}`"
+        :alt="staticContent.services.image1Alt"
         class="h-full w-full object-cover"
         sizes="640px md:400px lg:570px xl:620px"
         width="1512"
@@ -95,20 +76,13 @@ definePageMeta({
     >
       <PointBlob
         class="flex items-center place-self-center md:order-last"
-        title="Professionell Montering"
-        :point-lines="[
-          'Stor erfarenhet',
-          'Professionell installation',
-          'Säker installation enligt gällande regler',
-          'Rådgivning om optimal lösning',
-        ]"
-        point-type="dot"
-        point-width="small"
+        :title="staticContent.services.listTitle2"
+        :text="staticContent.services.listText2"
       />
 
       <NuxtImg
-        src="man-looking-out-from-scaffold.jpg"
-        alt="a man in a yellow west looking out from a scaffolding construction in a city"
+        :src="`${imageBaseUrl}/cms-files/${staticContent.services.image2}`"
+        :alt="staticContent.services.image2Alt"
         class="h-full w-full object-cover"
         sizes="640px md:280px lg:380px xl:420px"
         width="956"
@@ -121,18 +95,17 @@ definePageMeta({
     <div
       class="my-20 flex flex-col items-center justify-center bg-neutral-800 px-8 py-40 text-white md:px-40"
     >
-      <h3 class="mb-8 text-center">Samarbete med Byggpartners</h3>
+      <h3 class="mb-8 text-center">{{ staticContent.cooperation.title }}</h3>
 
-      <p class="px-4 text-center">
-        Vi har nära samarbete med flera kompetenta partners inom byggbranschen,
-        vilket gör att vi kan erbjuda er hjälp med snickerier, målning och
-        takbyten - oavsett om det gäller tegel, plåt eller papp.
-      </p>
+      <p
+        v-html="formatText(staticContent.cooperation.text)"
+        class="px-4 text-center"
+      ></p>
 
       <div class="my-24 grid w-full gap-4 sm:grid-cols-2">
         <NuxtImg
-          src="house-green-windows-front.jpg"
-          alt="a white wood house front covered with scaffolding"
+          :src="`${imageBaseUrl}/cms-files/${staticContent.cooperation.imageLeft}`"
+          :alt="staticContent.cooperation.imageLeftAlt"
           sizes="640px sm:350px lg:480px xl:600px"
           width="1512"
           height="2016"
@@ -141,8 +114,8 @@ definePageMeta({
         />
 
         <NuxtImg
-          src="house-green-windows-side.jpg"
-          alt="a white wood house side covered with scaffolding"
+          :src="`${imageBaseUrl}/cms-files/${staticContent.cooperation.imageRight}`"
+          :alt="staticContent.cooperation.imageRightAlt"
           sizes="640px sm:350px lg:480px xl:600px"
           width="1512"
           height="2016"
@@ -151,18 +124,11 @@ definePageMeta({
         />
       </div>
 
-      <h3 class="mb-8 text-center">Varför Välja 7H Ställning AB?</h3>
+      <h3 class="mb-8 text-center">{{ staticContent.whyChooseUs.title }}</h3>
 
       <PointBlob
-        class="flex items-center place-self-center md:order-last [&_li]:text-center [&_ul]:items-center"
-        :point-lines="[
-          'Kostnadsfria Offerter - Ring så räknar vi fram det bästa priset för ditt projekt',
-          'Lokal Närvaro - Vi finns här när du behöver oss',
-          'Komplett Service - Från planering till nedmontering',
-          'Säkerhet Först - All utrustning kontrolleras regelbundet',
-        ]"
-        point-type="checkbox"
-        point-width="medium"
+        class="flex items-center place-self-center md:order-last [&_div]:text-center"
+        :text="staticContent.whyChooseUs.text"
       />
     </div>
 
@@ -170,22 +136,37 @@ definePageMeta({
       id="contact-section"
       class="grid px-8 sm:px-12 md:mb-0 md:grid-cols-[0.5fr_0.75fr] xl:px-32"
     >
-      <PointBlob
-        class="flex items-center place-self-center text-center md:order-last md:text-left"
-        title="Kontakta Oss Idag!"
-        :point-lines="[
-          'Ring för kostnadsfri offert:',
-          '',
-          '📞 Kristoffer: <a href=\'tel:0733286381\' class=\'underline hover:opacity-75\'>0733-28 63 81</a>',
-          '📞 Tobias: <a href=\'tel:0704770070\' class=\'underline hover:opacity-75\'>0704-77 00 70</a>',
-          '',
-          'Vi återkommer snabbt med en skräddarsydd lösning för ditt projekt!',
-        ]"
-      />
+      <div
+        class="flex w-full flex-col items-center place-self-center px-16 text-center md:order-last md:items-start md:text-left"
+      >
+        <PointBlob
+          :title="staticContent.contact.title"
+          :text="staticContent.contact.text"
+        />
+
+        <div class="md:ml-8">
+          📞 {{ staticContent.contact.phoneName1 }}:
+          <a
+            :href="'tel:' + staticContent.contact.phoneNumber1"
+            class="underline hover:opacity-75"
+            >{{ staticContent.contact.phoneNumber1 }}</a
+          >
+        </div>
+        <div class="md:ml-8">
+          📞 {{ staticContent.contact.phoneName2 }}:
+          <a
+            :href="'tel:' + staticContent.contact.phoneNumber2"
+            class="underline hover:opacity-75"
+            >{{ staticContent.contact.phoneNumber2 }}</a
+          >
+        </div>
+
+        <PointBlob :text="staticContent.contact.serviceText" />
+      </div>
 
       <NuxtImg
-        src="inside-scaffolding-construction.jpg"
-        alt="scaffolding construction at side of a house wall and with protective garment on the other side"
+        :src="`${imageBaseUrl}/cms-files/${staticContent.contact.image}`"
+        :alt="staticContent.contact.imageAlt"
         class="h-full w-full object-cover"
         sizes="640px sm:670px md:370px lg:480px xl:520px"
         width="1170"
@@ -200,9 +181,10 @@ definePageMeta({
         class="mx-auto mb-12 h-px w-1/3 justify-self-center bg-black/10"
       ></div>
 
-      <p class="mx-16 text-center italic">
-        I samarbete med Nordsjö Idé & Design
-      </p>
+      <p
+        v-html="formatText(staticContent.pageSubtext.text)"
+        class="mx-16 text-center italic"
+      ></p>
     </div>
   </div>
 </template>
