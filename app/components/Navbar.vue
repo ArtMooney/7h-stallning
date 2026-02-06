@@ -1,3 +1,10 @@
+<script setup>
+const staticContentStore = useStaticContentStore();
+const staticContent = computed(
+  () => staticContentStore.getContentByTitle("Component - Navbar").content,
+);
+</script>
+
 <template>
   <div
     id="navbar"
@@ -20,7 +27,7 @@
       <button
         class="min-w-40 cursor-pointer rounded bg-neutral-700 px-6 py-3 text-center text-sm text-white duration-200 hover:bg-neutral-900"
       >
-        Kontakta oss
+        {{ staticContent.buttons.contact }}
       </button>
     </NuxtLink>
   </div>

@@ -1,13 +1,20 @@
+<script setup>
+const staticContentStore = useStaticContentStore();
+const staticContent = computed(
+  () => staticContentStore.getContentByTitle("Component - CompanyInfo").content,
+);
+</script>
+
 <template>
   <div
     ref="companyInfo"
     class="flex flex-wrap justify-center gap-x-3 gap-y-2 justify-self-center text-xs [&>a]:underline [&>a]:opacity-40 [&>a]:hover:opacity-50 [&>p]:opacity-40"
   >
-    <p>7H Ställning AB</p>
-    <p>Bergkullavägen 5</p>
-    <p>511 62 Skene</p>
-    <a href="tel:0704-77 00 70">Tel. 0704-77 00 70</a>
-    <a href="tel:0733-28 63 81">Tel. 0733-28 63 81</a>
+    <p>{{ staticContent.company }}</p>
+    <p>{{ staticContent.address }}</p>
+    <p>{{ staticContent.address2 }}</p>
+    <a :href="`tel:${staticContent.phone}`">Tel. {{ staticContent.phone }}</a>
+    <a :href="`tel:${staticContent.phone2}`">Tel. {{ staticContent.phone2 }}</a>
   </div>
 </template>
 
