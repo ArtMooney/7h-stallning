@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     provider: "weserv",
 
     weserv: {
-      baseURL: "https://pub-27b7ffede5804e1381d74a16e0e56bee.r2.dev",
+      baseURL: process.env.NUXT_PUBLIC_IMAGE_BASE_URL,
       modifiers: {
         format: "webp",
         quality: 65,
