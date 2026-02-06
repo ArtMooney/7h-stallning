@@ -39,7 +39,7 @@ import IconEdit from "~icons/mage/edit";
     </a>
 
     <NuxtLink to="/admin" class="absolute bottom-2 left-2">
-      <IconEdit class="size-6 opacity-20 hover:opacity-30" />
+      <IconEdit class="size-5 opacity-20 hover:opacity-30" />
     </NuxtLink>
   </div>
 </template>
