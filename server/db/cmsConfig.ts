@@ -85,5 +85,17 @@ export const staticContentTypes = {
       text: "textarea",
     },
   },
+  "Component - Navbar": {
+    buttons: {
+      contact: "text",
+    },
+  },
+  "Component - CompanyInfo": {
+    company: "text",
+    address: "text",
+    address2: "text",
+    phone: "text",
+    phone2: "text",
+  },
   "SEO page - Index": getSeoSchema(),
 };
