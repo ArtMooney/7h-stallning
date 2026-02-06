@@ -34,7 +34,7 @@ import IconEdit from "~icons/mage/edit";
       target="_blank"
     >
       Powered by
-      <span><IconHeart class="h-6 min-h-6 w-6 min-w-6 px-1" /></span>
+      <span><IconHeart class="size-6 px-1" /></span>
       FrameCore
     </a>
 

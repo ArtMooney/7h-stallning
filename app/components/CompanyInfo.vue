@@ -33,9 +33,9 @@ export default {
           index > 0 &&
           infoElement.offsetTop === infoElements[index - 1].offsetTop
         ) {
-          infoElement.classList.add("border-l", "border-white", "pl-3");
+          infoElement.classList.add("border-l", "border-black/20", "pl-3");
         } else {
-          infoElement.classList.remove("border-l", "border-white", "pl-3");
+          infoElement.classList.remove("border-l", "border-black/20", "pl-3");
         }
       }
     },
