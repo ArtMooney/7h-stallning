@@ -1,6 +1,7 @@
 <template>
   <div class="flex flex-col items-center px-4 py-12 md:px-8">
     <form
+      v-if="!isChanged"
       @submit.prevent
       class="grid w-full gap-2 sm:w-2/3 md:w-1/2"
       name="new-password"
@@ -75,6 +76,7 @@ export default {
       showStatusMessage: false,
       statusMessage: "",
       buttonText: "Change password",
+      isChanged: false,
     };
   },
 
@@ -111,6 +113,7 @@ export default {
           this.statusMessage =
             "Your password has been successfully changed. <a href='/admin' class='underline'>Click here to login.</a>";
           this.showStatusMessage = true;
+          this.isChanged = true;
           this.buttonText = savedText;
           this.inputPasswordOne = "";
           this.inputPasswordTwo = "";
@@ -120,6 +123,7 @@ export default {
           this.statusMessage =
             err.statusMessage || "Something went wrong. Please try again.";
           this.showStatusMessage = true;
+          this.isChanged = false;
           this.buttonText = savedText;
 
           this.clearErrorWhenClicked();
