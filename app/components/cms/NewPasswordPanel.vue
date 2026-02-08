@@ -14,6 +14,7 @@
         placeholder="Enter new password"
         required
         autocomplete="new-password"
+        class="text-base"
       />
 
       <input
@@ -23,6 +24,7 @@
         placeholder="Enter new password again"
         required
         autocomplete="new-password"
+        class="text-base"
       />
 
       <button

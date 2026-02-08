@@ -27,23 +27,6 @@ export default {
   },
 
   mounted() {
-    const viewport = document.querySelector("meta[name=viewport]");
-
-    if (viewport) {
-      const originalContent = viewport.getAttribute("content");
-      viewport.setAttribute(
-        "content",
-        "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
-      );
-
-      setTimeout(() => {
-        viewport.setAttribute(
-          "content",
-          originalContent || "width=device-width, initial-scale=1.0",
-        );
-      }, 100);
-    }
-
     window.scrollTo(0, 0);
   },
 };

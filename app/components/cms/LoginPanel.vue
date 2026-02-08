@@ -14,6 +14,7 @@
         placeholder="Enter email address"
         required
         autocomplete="email"
+        class="text-base"
       />
 
       <input
@@ -22,6 +23,7 @@
         type="password"
         placeholder="Enter password"
         autocomplete="current-password"
+        class="text-base"
       />
 
       <button

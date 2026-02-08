@@ -13,6 +13,7 @@
         type="email"
         placeholder="Enter email address"
         autocomplete="email"
+        class="text-base"
       />
 
       <button
