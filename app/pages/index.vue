@@ -149,16 +149,34 @@ definePageMeta({
           <a
             :href="'tel:' + staticContent.contact.phoneNumber1"
             class="underline hover:opacity-75"
-            >{{ staticContent.contact.phoneNumber1 }}</a
           >
+            {{ staticContent.contact.phoneNumber1 }}
+          </a>
+          <span v-if="staticContent.contact.email1">, </span>
+          <a
+            v-if="staticContent.contact.email1"
+            :href="'mailto:' + staticContent.contact.email1"
+            class="underline hover:opacity-75"
+          >
+            {{ staticContent.contact.email1 }}
+          </a>
         </div>
         <div class="md:ml-8">
           📞 {{ staticContent.contact.phoneName2 }}:
           <a
             :href="'tel:' + staticContent.contact.phoneNumber2"
             class="underline hover:opacity-75"
-            >{{ staticContent.contact.phoneNumber2 }}</a
           >
+            {{ staticContent.contact.phoneNumber2 }}
+          </a>
+          <span v-if="staticContent.contact.email2">, </span>
+          <a
+            v-if="staticContent.contact.email2"
+            :href="'mailto:' + staticContent.contact.email2"
+            class="underline hover:opacity-75"
+          >
+            {{ staticContent.contact.email2 }}
+          </a>
         </div>
 
         <PointBlob :text="staticContent.contact.serviceText" />

@@ -10,11 +10,29 @@ const staticContent = computed(
     ref="companyInfo"
     class="flex flex-wrap justify-center gap-x-3 gap-y-2 justify-self-center text-xs [&>a]:underline [&>a]:opacity-40 [&>a]:hover:opacity-50 [&>p]:opacity-40"
   >
-    <p>{{ staticContent.company }}</p>
-    <p>{{ staticContent.address }}</p>
-    <p>{{ staticContent.address2 }}</p>
-    <a :href="`tel:${staticContent.phone}`">Tel. {{ staticContent.phone }}</a>
-    <a :href="`tel:${staticContent.phone2}`">Tel. {{ staticContent.phone2 }}</a>
+    <p v-if="staticContent.company">{{ staticContent.company }}</p>
+    <p v-if="staticContent.address">{{ staticContent.address }}</p>
+    <p v-if="staticContent.address2">{{ staticContent.address2 }}</p>
+    <a v-if="staticContent.phone" :href="`tel:${staticContent.phone}`"
+      >Tel. {{ staticContent.phone }}</a
+    >
+    <a v-if="staticContent.phone2" :href="`tel:${staticContent.phone2}`">
+      Tel. {{ staticContent.phone2 }}
+    </a>
+    <a
+      v-if="staticContent.email1"
+      :href="`mailto:${staticContent.email1}`"
+      class="underline hover:opacity-50"
+    >
+      {{ staticContent.email1 }}
+    </a>
+    <a
+      v-if="staticContent.email2"
+      :href="`mailto:${staticContent.email2}`"
+      class="underline hover:opacity-50"
+    >
+      {{ staticContent.email2 }}
+    </a>
   </div>
 </template>
 
