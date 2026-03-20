@@ -5,6 +5,16 @@ const config = useRuntimeConfig();
 const imageBaseUrl = config.public.imageBaseUrl;
 const staticContentStore = useStaticContentStore();
 await staticContentStore.loadContent();
+const pageContent = computed(
+  () => staticContentStore.getContentByTitle("page - Index").content,
+);
+const companyInfo = computed(
+  () =>
+    staticContentStore.getContentByTitle("Component - CompanyInfo").content,
+);
+const seoContent = computed(
+  () => staticContentStore.getContentByTitle("SEO page - Index").content,
+);
 
 useHead({
   script: [
@@ -14,16 +24,15 @@ useHead({
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        name: "7H Ställning AB",
-        image: `${imageBaseUrl}/man-on-scaffold.jpg`,
-        url: "https://www.7hstallning.se",
-        telephone: "+46733286381",
-        email: "",
+        name: companyInfo.value?.company || "",
+        image: `${imageBaseUrl}/cms-files/${pageContent.value?.heading?.image || ""}`,
+        url: config.public.publicSiteUrl || "",
+        telephone: companyInfo.value?.phone || "",
+        email: companyInfo.value?.email1 || "",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Bergkullavägen 5",
-          addressLocality: "Skene",
-          postalCode: "511 62",
+          streetAddress: companyInfo.value?.address || "",
+          addressLocality: companyInfo.value?.address2 || "",
           addressCountry: "SE",
         },
         geo: {
@@ -37,8 +46,7 @@ useHead({
           opens: "07:00",
           closes: "16:00",
         },
-        description:
-          "7H Ställning AB erbjuder uthyrning och professionell montering av byggställningar i Kinna och Marks kommun. Moderna säkra ställningar, flexibla hyresperioder och snabb leverans. Vi erbjuder kompletta lösningar från uthyrning till montering för alla typer av projekt.",
+        description: seoContent.value?.description || "",
         sameAs: [
           "https://www.facebook.com/profile.php?id=61576869093029",
           "https://www.instagram.com/7h_stallningab/",
@@ -53,31 +61,30 @@ useHead({
           "Sverige",
         ],
         serviceType: [
-          "Uthyrning av Byggställningar",
-          "Professionell Montering av Byggställningar",
-          "Säker Installation enligt Gällande Regler",
-          "Byggställningsrådgivning",
+          pageContent.value?.services?.listTitle1 || "",
+          pageContent.value?.services?.listTitle2 || "",
         ],
         makesOffer: {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Uthyrning och Montering av Byggställningar",
-            description:
-              "Kompletta ställningslösningar med moderna och säkra byggställningar, professionell montering, flexibla hyresperioder och kostnadsfria offerter. Vi erbjuder tjänster för alla typer av byggprojekt oavsett storlek.",
+            name: seoContent.value?.ogTitle || "",
+            description: seoContent.value?.ogDescription || "",
           },
         },
         employee: [
           {
             "@type": "Person",
-            name: "Kristoffer",
-            telephone: "+46733286381",
+            name: pageContent.value?.contact?.phoneName1 || "",
+            telephone: pageContent.value?.contact?.phoneNumber1 || "",
+            email: pageContent.value?.contact?.email1 || "",
             jobTitle: "Kontaktperson",
           },
           {
             "@type": "Person",
-            name: "Tobias",
-            telephone: "+46704770070",
+            name: pageContent.value?.contact?.phoneName2 || "",
+            telephone: pageContent.value?.contact?.phoneNumber2 || "",
+            email: pageContent.value?.contact?.email2 || "",
             jobTitle: "Kontaktperson",
           },
         ],
