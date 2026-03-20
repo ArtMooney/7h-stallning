@@ -158,7 +158,7 @@ definePageMeta({
             :href="'mailto:' + staticContent.contact.email1"
             class="underline hover:opacity-75"
           >
-            {{ staticContent.contact.email1 }}
+            📧 {{ staticContent.contact.email1 }}
           </a>
         </div>
         <div class="md:ml-8">
@@ -175,7 +175,7 @@ definePageMeta({
             :href="'mailto:' + staticContent.contact.email2"
             class="underline hover:opacity-75"
           >
-            {{ staticContent.contact.email2 }}
+            📧 {{ staticContent.contact.email2 }}
           </a>
         </div>
 

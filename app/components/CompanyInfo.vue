@@ -24,14 +24,14 @@ const staticContent = computed(
       :href="`mailto:${staticContent.email1}`"
       class="underline hover:opacity-50"
     >
-      {{ staticContent.email1 }}
+      Email. {{ staticContent.email1 }}
     </a>
     <a
       v-if="staticContent.email2"
       :href="`mailto:${staticContent.email2}`"
       class="underline hover:opacity-50"
     >
-      {{ staticContent.email2 }}
+      Email. {{ staticContent.email2 }}
     </a>
   </div>
 </template>
